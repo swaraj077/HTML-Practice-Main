@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- IMP - HTML entities -->
+    <!--1. HTML entities are strings which starts with ampercent(&) and ends with semicolon(;)  
+        2. These are needed to display reserved characters or characters which are difficult to type with keyboard, which may be interpreted as HTML code
+        3. ex - to type less than (<) symbol you have to write &lt; for heart(love symbol) &hearts;-->
+
+        <h2>a &lt; b</h2>
+        <h2>a &gt; b</h2>
+        <h2>a &amp; b</h2>
+        Most IMP (nbsp)
+        <h2>a &nbsp; &nbsp; &nbsp;b</h2> (space)
+
+
+    <!-- All form tags like - label, input, textarea, dropdrown menu (select & option) all are inline tags-->
+    <!-- All formatting tags are inline tags -->
+    <h1>Things to practice in HTML</h1>
+    <h2>1. Heading tags</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h2>2. Formatting Tags</h2>
+    <b>1. Bold, semantic - strong</b>
+    <i>2. Itallic. semantic - em</i>
+    <u>3. Underline</u>
+    <s>4. Strikethrough</s>
+    <small>5. small</small>
+    <p>6. normal</p>
+    <big>7.big</big>
+    8. sub <sub>script</sub>, super<super>Script</super> <!--Formating tags are inline tags-->
+
+    <h2>3. Add image id, class</h2>
+    <img height = "500px" alt = "dog" title = "dog" src = "https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <p>class can visualise better in CSS class</p>
+
+    <h2 id = "list">4. Lists</h2>
+    <h3>I. Unordered List</h3>   <!--Types:- disc (default), sqaure, circle-->
+    <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+
+    <h3>II. Ordered List</h3>    <!--Types:- 1, A, a, I, i-->
+    <ol>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ol>
+
+    <h3>III. Description list</h3>
+    <dl>
+        <dt>samsung</dt>
+            <dd>samsung m31</dd>
+            <dd>samsung s23 ultra</dd>
+        <dt>Nokia</dt>
+            <dd>Nokia 1200</dd>
+            <dd>Nokia xp</dd> 
+    </dl>
+      <!--confusion-->
+
+    <h2>5. Add links, anchor tag</h2>
+    <h3>1. External reference links</h3>
+    <h4>website links</h4>
+    <a target = "_blank" href = "https://www.youtube.com/watch?v=rZ41y93P2Qo&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ">Kunal Kushwaha DSA</a> 
+    <!--target = "_blank" attribute-->
+    <h4>email links</h4>
+    <a href = "mailto:swarajpatil1501@gmail.com">Email me from here</a>
+
+    <h3>2. Internal reference links</h3>
+    <a href = "#list">go to list sections from this document</a>
+
+    <h2>Make whole page semantic</h2>
+    1. use nav tag for grouping links
+    2. use header, section, footer, main, aside
+
+    <h2>7. Tables</h2>
+    <table border = "1">
+        <caption>Stationary</caption>
+        <thead>
+            <tr>
+                <th scope="col">Sr. No</th>
+                <th scope="col">name of product</th>
+                <th scope="col">price</th>
+                <th scope="col">gst</th>
+            </tr>
+        </thead>
+        
+
+       <tbody>
+        <tr>
+            <th scope="row">1.</th>
+            <td>ruler</td>
+            <td>20</td>
+            <td>5%</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2.</th>
+            <td>sharperner</td>
+            <td>5</td>
+            <td>5%</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3.</th>
+            <td>pancil</td>
+            <td>10</td>
+            <td>10%</td>
+        </tr>
+
+        <tr>
+            <th scope="row" colspan = "2">Total</th>
+            <td>10</td>
+            <td>15%</td>
+        </tr>
+
+        <tr>
+            <th scope="row" colspan = "2" rowspan = "2">Trial</th>
+            <td rowspan = "2">10</td>
+            <td>25%</td>
+        </tr>
+
+        <tr>
+            <td>35%</td>  
+            <!--here blank spaces are already occupied by above rowspan and colspan
+                So no need to write <td> for them. write directly last td which is required-->
+        </tr>
+       </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">4.</th>
+                <td>rubber</td>
+                <td>5</td>
+                <td>40%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>8. Form and its tags</h2>
+    <form>
+        <label for = "txt">Type Anything text, no, characters:</label>  <!--label tag is inline tag-->
+        <input id = "txt" type = "text" placeholder = "write name" name = "text" required>
+
+        <label for = "no">You can type number only, also you can write + & - sign:</label>
+        <input id = "no" placeholder = "9814523687" type = "number" name = "number" required>
+
+        <label for = "mail">email:</label>
+        <input id = "mail" placeholder = "abc@gmail.com" type = "email" name = "Email">
+
+        <label for = "date">date:</label>
+        <input type = "date" placeholder="12/07/2025" name = "date" id = "date">
+
+        <label for = "file">file:</label>
+        <input type = file name = "file" id = "file">
+
+        <label>Range:</label>
+        <input type = range value = "80" step = "10" min = "0" max = "100" name = "range"> <!--IMP attriute is step = "10"-->
+
+        <label>Submit button:</label>
+        <input type = submit>
+
+        <label>reset button:</label>
+        <input type = reset>
+
+        <label>Checkbox:</label>
+        <input type = "checkbox">   
+
+        <label>radio Button:</label>
+        <input type = "radio">
+        <!-- Name and value required for both checkbox and radio box -->
+
+        <h3>Detailed Radio Button</h3>
+        <label>Gender:</label>
+        <label>Male</label>
+        <input name = "Gender" value = "Male" type = "radio">
+        <label>Female</label>
+        <input name = "Gender" value = "female" type = "radio">
+
+        <h3>Drop down menu</h3>
+        <label>Mobile:</label>
+        <select name = "Mobile" multiple > <!--multiple attribute to select multiple options-->
+            <option value = "iphone">iphone</option>
+            <option value = "nokia">nokia</option>
+            <option value = "samsung">samsung</option> 
+        </select>
+
+        <h3>Text area:</h3>
+        <textarea name = "comments" rows = "4" cols = "20"></textarea>
+
+        <p>End of HTML</p>
+    </form>
+</body>
+</html>

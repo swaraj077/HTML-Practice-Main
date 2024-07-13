@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalntica</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Atlantica</h1>
+    <p>The City of Ocean Dreams!</p>
+    <nav>
+        <a href = "#description">Description</a> <span>|</span>
+        <a href = "#attractions">Attractions</a> <span>|</span>
+        <a href = "#statastics">Statastics</a>   <span>|</span>
+        <a href = "#feedback">Feedback</a>       <span>|</span>
+        <a href = "#quotes">Quotes</a>           <span>|</span>
+        <a href = "#contact">Contact</a>         
+    </nav>
+</header>
+
+<section>
+    <h2 id = "description">Discover Atlantica</h2>
+    <img height = "500px" title = "Atalntica Ocean" src="https://images.unsplash.com/photo-1488278905738-514111aa236c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Atalntica ocean photo">
+    <p>Atlantica, the city where horizon merges the sky with the ocean,offering dreams a canvas vast as a sea</p>
+</section>
+
+<section>
+    <h2 id = "attractions">Attractions</h2>
+    <h3>Main Attractions</h3>
+    <ol type="A">
+        <li>Atlatic Tower</li>
+        <li>Deep sea museum</li>
+        <li>The Oceanic bridge</li>
+    </ol>
+    
+    <h3>Local favourites</h3>
+    <ul type = "disc"> <!--1 st --> 
+        <li>Mermen's Street</li>
+        <li>Neptune dinner</li>
+        <li>Atlantica Beaches
+            <ul type = "circle">
+                <li>North Beach</li>
+                <li>reef Bay</li>
+                <li>Mermaid cave</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+    
+<section>
+    <h2 id = "statastics">City Statastics</h2>
+    <table border  = "1">
+        <Caption>City Stats</Caption>
+        <thead>
+            <tr>
+                <th scope = "col">Attribyte</th> <!--Scope = col not column--> 
+                <th scope = "col">Value</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Population</td>
+                <td>Millions</td>
+            </tr>
+    
+            <tr>
+                <td>Landmark</td>
+                <td>25</td>
+            </tr>
+    
+            <tr>
+               <td>Parks</td>
+               <td>18</td>
+            </tr>
+    
+            <tr>
+                <td>Schools</td>
+                <td>120</td>
+            </tr>
+    
+            <tr>
+                <td>Beaches</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2 id = "feedback">Feedback</h2>
+    <form>
+        <div>
+            <label for = "name">Name:</label>
+            <input id = "name" type = "text" placeholder = "Abhishek Kumar" name = "P_Name">
+        </div>
+
+        <div>
+            <label for = "email">Email:</label>
+            <input id = "email" type = "email" placeholder = "Abhishek@gmail.com" name = "P_email">
+        </div>
+        
+        <div>
+            <label for = "age">Age:</label>
+            <input id = "age" type = "number" placeholder = "56" name = "P_age">
+        </div>
+
+        <div>
+            <label for = "F_attraction">Favourire Attraction:</label>
+            <select id = "F_attraction" name = "F_attraction">
+                <option value="Atlantic tower">Atlantic tower</option>
+                <option value="Deep sea museum">Deep sea museum</option>
+                <option value="The Oceanic bridge">The Oceanic bridge</option>
+            </select>
+        </div>
+
+        <div>
+            <label for = "comments">Comments:</label>
+            <textarea name = "Feeback" id = "comments" rows = "5" cols = "10"></textarea>  <!--Rows and cols-->
+        </div>
+
+        <div>
+            <label for = "checkbox">Newsletter</label>
+            <input id = "checkbox" type = "checkbox" name = "is_subscribed" value = "subscribed" checked>  <!--2 nd -->
+            <span>Subscribe to our Newsletter</span>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</section>
+    
+<section>
+    <h2 id = "quotes">What citizens say</h2>
+    <p>"Atlantica beaches are paradise on earth"</p>
+    <p>"The blend of modern skyscrappers and ocean is awesome"</p>
+</section>
+
+    
+<footer>
+    <h2 id = "contact">Contact us</h2>
+    <p><i>Atlantica Tourism Office</i></p>
+    <p><i>100 ocean Drive, Atlantica</i></p>
+    <p><i>Email: <a href = "mailto:info@atlantica.com">info@atlantica.com</a></i></p>
+    <p><i>Phone: 123-456-789</i></p>
+    <div>Atlantica Ocean Trademark</div>
+</footer>
+
+</body>
+</html>
